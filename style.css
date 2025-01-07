@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/piccodingbackground1.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /*The value of padding-top moves the header logo down, sign in and login buttons, and ul, which gives space between the upper edge of the page and the header logo, buttons, and ul.*/
+    padding-top: 50px;
+    /*The value of text-align moves all the header text in the header section to the center. Note: The header image (logo) is at the center.*/
+    text-align: center;
+}
+.header img{
+    /*border: 2px solid white;*/
+    /*The value of float moves the header image back to the left regardless of the styling of text-align for the header section.*/
+    float: left;
+    /*The width of 150px shrinks the logo image. With the width's value and the margin-top's value, the logo image is now aligned with the login and sign-up buttons.*/
+    width: 150px;
+    /*The margin-top of -50px reduces the top space outside the .header img.*/
+    margin-top: -50px;
+}
+.login-btn, .sign-up-btn{
+    /*The width of 100px extend the width of both buttons.*/
+    width: 100px;
+    /*The first value of padding extends the space inside of both buttons.  */
+    padding: 10px 5px;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+     /*The value of margin-right spread the two buttons apart from each other.*/
+     margin-right: 10px;
+    /*It float right at the right spot where it aligns the space between the header image (logo) and the left edge of the page. Even the two buttons have space in between, it doesn't affect the result.*/
+    float: right;
+}
+.header .header-list{
+    /*The value of float moves the header ul to the right.*/
+    float: right;
+    /*The padding-right of 30px moves the header ul little bit back to the left to give space between the header login button and the ul.*/
+    padding-right: 10px;
+    /*The padding-top of 10px moves the header ul down to the middle of the login button.*/
+    padding-top: 10px;
+}
+.header .header-list a{
+    /*The value of text-decoration remove the underline of the header links.*/
+    text-decoration: none;
+    color: white;
+    /*The value of margin-right gives space between each header links.*/
+    margin-right: 10px;
+    cursor: pointer;
+}
+.explore{
+    /*The value of padding-top moves down to 350px, close to the center.*/
+    padding-top: 250px;
+    color: white;
+}
+.explore h1{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.search-bar{
+    /*The value of margin-top moves all the input and button within the searh-bar div down. It gives space between the explore h2 and the search-bar input.*/
+   margin-top: 5px;
+   /*The value of display extends the inside of the input and button. It also moves each input and button closer together.*/
+   display: inline-flex;
+   /*The value of margin-left moves the input and button to the right. The higher the value is, the more it moves to the right side.*/
+}  
+.search-bar .search-form{
+    /*The value of margin-right spread each input and the button apart from each other.*/
+    margin-right: 10px;
+    /*The value of the width extends the input.*/
+    width: 500px;
+}
+.search-bar .btn-info{
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+}
+.search-bar .btn-info:hover{
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+/*This styles all the items in the discount section.*/
+.discount{
+    padding: 100px 0;
+    background: #efefef;
+}
+.discount h1{
+    text-align: center;
+}
+.discount .col-md-3 img{
+    /*The value of the width shrinks all col-md-3 images.*/
+    width: 100%;
+    height: 200px;
+    /*The value of padding-right gives space between each col-md-3 images.*/
+    padding-right: 20px;
+    /*The value of padding-top moves the col-md-3 images down, which gives space between the bottom of discount h1 and the images.*/
+    padding-top: 30px;
+    opacity: 0.3;
+    transition-duration: 1s;
+    /*The translate is to position the element in x,y,z.*/
+    /*transform: translate(5%,5%);*/
+    cursor: pointer;
+}
+.discount .col-md-3 img:hover{
+    /*The scale increase the size of the discount col-md-3 image when I hover it.*/
+    transform: scale(1.2);
+}
+.discount .col-md-3 p{
+    /*The value of text-align moves the col-md-3 p from the left to the center of the col-md-3 image.*/
+    text-align: center;
+    /*The negative value of margin-top moves the col-md-3 p up to the center of the col-md-3 image.*/
+    margin-top: -90px;
+    margin-bottom: 90px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+.discount .col-md-3 p:hover{
+    color: #0dcaf0;
+}
+.second-container{
+    /*The value of margin-top moves the second-container images down to give space between the first and the second container images.*/
+    margin-top: 50px;
+}
+/*review section*/
+.review{
+    /*The first value of padding moves the review h1 down.*/
+    padding: 100px 0;
+}
+.review h1{
+    text-align: center;
+}
+.review .col-md-4{
+    /*The margin-top of 30px gives space between the top column.*/
+    margin-top: 30px;
+  
+}
+.review .review-box{
+    /*The values of box-shadow acts like a box or div.*/
+    box-shadow: 0 0 10px 0 rgba(0,0,100,0.2);
+    /*The second value of padding-left and right moves the review-box's items (h1, small, p) to the right. It gives space between the review-box's items and the left edge of the page. It also moves the review-box's items away from the right edge of the page. It gives the same space as the left side of the page.*/
+    padding: 25px 20px;
+    /*The value of height extends the review-box box-shadow.*/
+    height: 100%;
+    /*I have to add width of 100% so that the star rating would stay inside the review box when the screen continues to shrink. */
+    width: 100%;
+    /*The value of margin-right spreads each review box-shadow (acts like a box or div) apart from each other.*/
+    margin-right: 10px;
+    /*The value of margin-top move the review box-shadow down. It gives space between the review box-shadow and review h1.*/
+    margin-top: 30px;
+}
+.review .review-box h5{
+    /*The value of margin-bottom removes the gap between review-box h5 and review-box small.*/
+    margin-bottom: 0;
+}
+.review .review-box p{
+    /*The value of margin-top moves the review-box p down, which gives space between the review-box small text and the p text.*/
+    margin-top: 5px;
+    font-size: 15px;
+}
+.footer{
+    /*The first value of padding moves the four columns of the footer down.*/
+    padding: 50px 0;
+    /*A background footer*/
+    background: #efefef;
+    height: 40vh;
+}
+.footer .row{
+    /*The value of text-align centers the four columns in the footer row div.*/
+   text-align: center;
+   margin-right: 20px;
+   margin-bottom: 20px;
+}
+.footer .row .fa{
+    margin-right: 10px;
+}
+.footer .row .social-media{
+    /*The value of display aligns the social media icons horizontally.*/
+   display: inline;
+   font-size: 20px;
+}
+@media only screen and (max-width: 600px){
+    .footer{
+        /*The first value of padding moves the four columns of the footer down.*/
+        padding: 50px 0;
+        /*A background footer*/
+        background: #efefef;
+        height: 100vh;
+}
+    .discount .col-md-3 p{
+    /*The value of text-align moves the col-md-3 p from the left to the center of the col-md-3 image.*/
+    text-align: center;
+    /*The negative value of margin-top moves the col-md-3 p up to the center of the col-md-3 image.*/
+    /*The margin-top of negative 170px moves the p up.*/
+    margin-top: -170px;
+    margin-bottom: 170px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+}
